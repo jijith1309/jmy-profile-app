@@ -1,6 +1,23 @@
 {
-  "hosting": {
-    "site":"jijith",
+  "hosting": [
+    {
+    "site": "jijith-conversion-test-prod",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+    
+  },
+  {
+    "site": "jijith",
     "public": "public",
     "ignore": [
       "firebase.json",
@@ -15,4 +32,5 @@
     ]
     
   }
+]
 }
